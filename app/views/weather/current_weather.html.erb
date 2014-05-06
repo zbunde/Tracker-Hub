@@ -1,0 +1,15 @@
+<h1>Current Weather API</h1>
+
+<ul>
+<li>Weather For: <%= @weather_data["name"] %></li>
+<li>Hi Temp: <%= @weather_data["main"]["temp_max"].to_i/10 %>C</li>
+<li>Lo Temp: <%= @weather_data["main"]["temp_min"].to_i/10 %>C</li>
+<li>Conditions: <%= @weather_data["weather"].first["main"] %></li>
+<li>Humidity: <%= @weather_data["main"]["humidity"] %>%</li>
+<li>Humidity: <%= @weather_data["main"]["pressure"] %>Mb</li>
+</ul>
+
+<a href="/">Home</a>
+
+
+

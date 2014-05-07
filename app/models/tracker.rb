@@ -10,4 +10,12 @@ class Tracker
   def story_name
     @data.first["name"]
   end
+  def names
+    names = []
+    @data.each do |x|
+      p x
+      names << x["name"]
+    end
+    names
+  end
 end

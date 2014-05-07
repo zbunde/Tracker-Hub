@@ -31,7 +31,7 @@ describe Tracker do
     end
   end
 
-  it 'should return a list of stories for each project' do
+  it 'should return a list of stories for a project' do
     VCR.use_cassette("stories") do
 
       conn = Faraday.new(:url => 'https://www.pivotaltracker.com') do |faraday|

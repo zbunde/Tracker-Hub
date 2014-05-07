@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#index'
   get '/tracker_projects', to: 'tracker#projects'
-  get '/tracker_stories', to: 'tracker#stories'
+  get '/tracker_stories/:id', to: 'tracker#stories'
   get '/tracker_details', to: 'tracker#details'
 
 

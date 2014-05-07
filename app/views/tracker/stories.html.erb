@@ -1,9 +1,9 @@
-<h1>Tracker API - Stories for Ski Bucket List</h1>
+<h1>Tracker API</h1>
 
 <ul>
-<% @tracker_data.each do |x| %>
-  <li><%= x["name"] %></li>
-<% end %>
-</ul>
+<% @tracker.names.each do |x| %>
+<li><%= x %></li>
+    <% end %>
 
+    </ul>
 <p><a href="/">Home</a></p>

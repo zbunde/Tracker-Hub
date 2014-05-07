@@ -2,7 +2,7 @@
 
 <ul>
 <% @tracker_data.each do |x| %>
-  <li><%= x["name"] %></li>
+  <li><%= link_to x["name"], "/tracker_stories/#{x["id"]}" %></li>
 <% end %>
 </ul>
 

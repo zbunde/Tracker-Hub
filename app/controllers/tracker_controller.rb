@@ -34,7 +34,6 @@ class TrackerController <  ApplicationController
 
     @tracker = Tracker.new(json_data)
 
-
   end
 
 end

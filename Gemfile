@@ -13,3 +13,5 @@ gem 'activerecord', '~> 4.1.0'
 gem 'rails_12factor', '~> 0.0.2'
 gem 'faraday', '~> 0.9.0'
 gem 'dotenv', '~> 0.11.1'
+gem 'vcr', '~> 2.9.0'
+

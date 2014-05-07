@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
   root to: 'pages#index'
-
-  get '/current_weather', to: 'weather#current_weather'
-  get '/forecast_weather', to: 'weather#forecast_weather'
   get '/tracker_projects', to: 'tracker#projects'
   get '/tracker_stories', to: 'tracker#stories'
   get '/tracker_details', to: 'tracker#details'

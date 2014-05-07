@@ -7,5 +7,7 @@ class Tracker
   def projects
     @data.first["name"]
   end
-
+  def story_name
+    @data.first["name"]
+  end
 end

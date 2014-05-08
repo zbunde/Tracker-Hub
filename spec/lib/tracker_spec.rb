@@ -26,7 +26,7 @@ describe Tracker do
       json_data = JSON.parse(response.body)
       @tracker_data = Tracker.new(json_data)
 
-      expect(@tracker_data.projects).to include ("Cote and Klabunde")
+      expect(@tracker_data.first_project).to include ("Cote and Klabunde")
 
     end
   end

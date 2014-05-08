@@ -1,4 +1,6 @@
 class TrackerController <  ApplicationController
+
+
   def projects
 
     conn = Faraday.new(:url => 'https://www.pivotaltracker.com') do |faraday|
@@ -35,5 +37,6 @@ class TrackerController <  ApplicationController
     @tracker = Tracker.new(json_data)
 
   end
+
 
 end
